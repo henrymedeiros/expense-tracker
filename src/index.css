@@ -83,7 +83,7 @@ input[type='number'] {
   border-radius: 2px;
   display: block;
   font-size: 16px;
-  padding: 10px;
+  padding: 8px;
   width: 100%;
 }
 
@@ -122,6 +122,39 @@ input[type='number'] {
   margin: 10px 0;
 }
 
+.list li div{
+  width: 100%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.list li div input{
+  all: unset;
+  width: 100%;
+  -webkit-appearance: none;
+
+}
+
+
+.list li input[type='text'],
+.list li input[type='number'] {
+  font-size: 16px;
+  
+}
+
+.list li input[type='number'] {
+  font-size: 16px;
+  text-align: right;
+  
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .list li.plus {
   border-right: 5px solid #2ecc71;
 }
@@ -158,6 +191,10 @@ input[type='number'] {
   top: 50%;
   left: -50px;
   transform: translate(-100%, -100%);
+}
+
+.editable-field:hover{
+  background-color: #EBECF0;
 }
 
 .list li:hover .delete-btn {
