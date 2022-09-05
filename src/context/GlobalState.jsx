@@ -1,12 +1,7 @@
 import { createContext, useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 const initialState = {
-  transactions: [
-    { id: uuidv4(), text: "Flower", amount: -20 },
-    { id: uuidv4(), text: "Salary", amount: 300 },
-    { id: uuidv4(), text: "Book", amount: -10 },
-    { id: uuidv4(), text: "Camera", amount: 150 },
-  ],
+  transactions: [],
 };
 
 export const GlobalContext = createContext(initialState);

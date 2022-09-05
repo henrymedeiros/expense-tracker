@@ -7,12 +7,16 @@ const TransactionList = () => {
     <div>
       <h3>History</h3>
       <ul className="list">
-        {transactions.map((transaction) => (
-          <Transaction
-            key={transaction.id}
-            transaction={transaction}
-          ></Transaction>
-        ))}
+        {transactions.length <= 0 ? (
+          <span> Nothing here yet...</span>
+        ) : (
+          transactions.map((transaction) => (
+            <Transaction
+              key={transaction.id}
+              transaction={transaction}
+            ></Transaction>
+          ))
+        )}
       </ul>
     </div>
   );

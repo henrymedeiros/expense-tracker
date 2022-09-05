@@ -17,6 +17,8 @@ const AddTransaction = () => {
     };
 
     addTransaction(newTransaction);
+    setText("");
+    setAmount(0);
   };
 
   return (
@@ -28,6 +30,7 @@ const AddTransaction = () => {
           <input
             type="text"
             value={text}
+            required
             onChange={(e) => setText(e.target.value)}
             placeholder="Enter text..."
           />
